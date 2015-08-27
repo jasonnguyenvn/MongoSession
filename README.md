@@ -2,6 +2,8 @@
 I build this lib to give an easy way for programmers/developers to store sessions
 
 # Usage
+from pymongo import MongoClient
+
 from MongoSession import MongoSessionInterface
 
 mongoClient =  MongoClient(MONGO_URI)

@@ -1,5 +1,5 @@
 # MongoSessionWithPymongo
-I build this lib to give an easy way for programmers/developers to store sessions
+I build this lib to give an easy way for python/flask programmers/developers to store sessions
 
 # Usage
 from pymongo import MongoClient

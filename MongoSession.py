@@ -34,8 +34,12 @@ from datetime import datetime, timedelta
 from flask.sessions import SessionInterface, SessionMixin
 from flask import request
 from werkzeug.datastructures import CallbackDict
-from common.uncat import getRemoteIP
 
+__is_openShift = True
+def getRemoteIP():
+    if __is_openShift == False :
+        return request.remote_addr
+    return request.headers['x-forwarded-for']
 
 
 class MongoSession(CallbackDict, SessionMixin):

@@ -1,4 +1,4 @@
-# MongoSessionWithPymongo
+# MongoSession
 I build this lib to give an easy way for python/flask programmers/developers to store sessions
 
 # Usage

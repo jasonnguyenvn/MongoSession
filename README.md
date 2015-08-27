@@ -1,7 +1,12 @@
 # MongoSessionWithPymongo
 I build this lib to give an easy way for programmers/developers to store sessions
 
-MongoSessionWithPymongo 0.1
+# Usage
+from MongoSession import MongoSessionInterface
+mongoClient =  MongoClient(<MONGO URI>)
+app.session_interface = MongoSessionInterface(mongoClient)
+
+# MongoSessionWithPymongo
 Copyright (c) 2015, Jason Steve Nguyen (conghauit@outlook.com)
 All rights reserved.
 

@@ -12,7 +12,7 @@ app.session_interface = MongoSessionInterface(mongoClient)
 
 # License: The BSD 2-Clause License
 
-MongoSessionWithPymongo
+MongoSession
 Copyright (c) 2015, Jason Steve Nguyen (conghauit@outlook.com)
 All rights reserved.
 

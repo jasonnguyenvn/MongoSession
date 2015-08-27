@@ -35,7 +35,7 @@ from flask.sessions import SessionInterface, SessionMixin
 from flask import request
 from werkzeug.datastructures import CallbackDict
 
-__is_openShift = True
+__is_openShift = False
 def getRemoteIP():
     if __is_openShift == False :
         return request.remote_addr

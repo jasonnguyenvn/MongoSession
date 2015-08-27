@@ -58,7 +58,10 @@ class MongoSessionInterface(SessionInterface):
     def __checkSessIDValid(self, stored_session, remoteIP, remoteAgent):
         sessObj = MongoSession(initial=stored_session['data'],
                                 sid=stored_session['_id'])
-        if remoteIP!=sessObj.get('ip') or remoteAgent!=sessObj.get('agent'):
+        if remoteIP!=sessObj.get('ip'):
+            return None
+            
+        if remoteAgent!=sessObj.get('agent'):
             return None
 
         if stored_session.get('expiration') \

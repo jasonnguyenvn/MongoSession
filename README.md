@@ -3,7 +3,8 @@ I build this lib to give an easy way for programmers/developers to store session
 
 # Usage
 from MongoSession import MongoSessionInterface
-mongoClient =  MongoClient(<MONGO URI>)
+
+mongoClient =  MongoClient(MONGO_URI)
 app.session_interface = MongoSessionInterface(mongoClient)
 
 # License: The BSD 2-Clause License

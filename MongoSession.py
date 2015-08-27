@@ -1,5 +1,5 @@
 '''
-MongoSessionWithPymongo 0.1
+MongoSession 0.1
 Copyright (c) 2015, Jason Steve Nguyen (conghauit@outlook.com)
 All rights reserved.
 

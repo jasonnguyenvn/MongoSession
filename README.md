@@ -6,7 +6,9 @@ from MongoSession import MongoSessionInterface
 mongoClient =  MongoClient(<MONGO URI>)
 app.session_interface = MongoSessionInterface(mongoClient)
 
-# MongoSessionWithPymongo
+# License: The BSD 2-Clause License
+
+MongoSessionWithPymongo
 Copyright (c) 2015, Jason Steve Nguyen (conghauit@outlook.com)
 All rights reserved.
 
